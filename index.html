@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kasdi Anis - Personal Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="Anis Kasdi logo">
+                <div class="menu-toggle">☰</div>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>COMPUTER SCIENCE STUDENT</p>
+                <h1>Hi, I'm <span>Anis</span><br> a computer science student</h1>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/user.jpg" alt="Anis Kasdi profile picture">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>As a second-year Computer Science student at Bordeaux University, I am passionate about cybersecurity and network administration. My goal is to bridge the gap between theory and practice by gaining hands-on experience in network protocols, system security, and programming. With a strong foundation in Python, C, and tools like Wireshark and Nmap, I aim to contribute to real-world cybersecurity challenges and build a career as a cybersecurity engineer.</p>
+                        <div class="tabs">
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" data-tab="skills">Skills</p>
+                                <p class="tab-links" data-tab="experience">Experience</p>
+                                <p class="tab-links" data-tab="education">Education</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <div class="tab-container">
+                                    <ul>
+                                        <li><i class="fas fa-code"></i><span>CYBERSECURITY & NETWORKING</span><br>Proficient in network protocols, system security, and tools like Wireshark, Nmap, and Scapy.</li>
+                                        <li><i class="fas fa-laptop-code"></i><span>PROGRAMMING</span><br>Experienced in Python and C for scripting, data processing, and network automation.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab-contents" id="experience">
+                                <div class="tab-container">
+                                    <ul>
+                                        <li><span>SOFTWARE DEVELOPER</span><br>2023-2024, Bordeaux University – Developed complex algorithms in C and Python-based scripts for data processing and automation tasks.</li>
+                                        <li><span>BACKEND DEVELOPER</span><br>2023-2024, Bordeaux University – Designed and implemented backend features for a web application similar to Pinterest, ensuring real-time updates and secure API endpoints.</li>
+                                        <li><span>NETWORK DEVELOPER</span><br>2024-2025, Bordeaux University – Utilized Scapy and socket library in Python to analyze and simulate network traffic, and conducted packet analysis with Wireshark to optimize performance.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <div class="tab-container">
+                                    <ul>
+                                        <li><span>BACHELOR’S DEGREE IN COMPUTER SCIENCE</span><br>2024-2025 (L2), University of Bordeaux.</li>
+                                        <li><span>BACHELOR’S DEGREE IN COMPUTER SCIENCE</span><br>2023-2024 (L1), University of Bordeaux.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="service">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fas fa-laptop-code"></i>
+                        <h2>Web Development</h2>
+                        <p>Building responsive and dynamic websites using HTML, CSS, JavaScript, and Python for backend integration.</p>
+                        <a href="#"><i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div>
+                        <i class="fas fa-cogs"></i>
+                        <h2>Application Development</h2>
+                        <p>Creating efficient and scalable applications with Python and C for data processing and automation.</p>
+                        <a href="#"><i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div>
+                        <i class="fas fa-mobile-android-alt"></i>
+                        <h2>Network Analysis</h2>
+                        <p>Analyzing and optimizing network traffic using tools like Wireshark, Nmap, and Scapy for enhanced security and performance.</p>
+                        <a href="#"><i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="portfolio-list">
+                    <div>
+                        <img src="images/work-1.png" alt="Project 1 - Web application similar to Pinterest">
+                        <h2>Project 1</h2>
+                        <p>Web application similar to Pinterest – Designed and implemented backend features for seamless user experience.</p>
+                        <a href="https://chapitre10.vanillacademy.com/" class="portfolio-link">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                    <div>
+                        <img src="images/work-2.png" alt="Project 2 - Network traffic analysis tool">
+                        <h2>Project 2</h2>
+                        <p>Network traffic analysis tool – Utilized Python and Scapy to simulate and optimize network performance.</p>
+                        <a href="https://github.com/debyan145" class="portfolio-link">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                    <div>
+                        <img src="images/work-3.png" alt="Project 3 - Data processing script">
+                        <h2>Project 3</h2>
+                        <p>Data processing script – Developed Python-based scripts for automation and data analysis tasks.</p>
+                        <a href="https://github.com/debyan145" class="portfolio-link">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h1 class="sub-title">Contact Me</h1>
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h2>Get in Touch</h2>
+                        <p><i class="fas fa-phone"></i> +33 6 38 01 14 86</p>
+                        <p><i class="fas fa-envelope"></i> anis.kasdi2003@gmail.com</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/anis-kasdi-61a5a7273/" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://www.facebook.com/yan.saiyan.56" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://github.com/debyan145" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://wa.me/33638011486" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                        <a href="/images/my-cv.pdf" class="download-resume" download>Download Resume</a>
+                    </div>
+                    <div class="contact-form">
+                        <h2>Send a Message</h2>
+                        <form action="https://formspree.io/f/xgvawvpv" method="POST">
+                            <label for="name">Your Name:</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            
+                            <label for="email">Your Email:</label>
+                            <input type="email" id="email" name="email" placeholder="Your Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                            
+                            <label for="message">Your Message:</label>
+                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                            
+                            <button type="submit">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Kasdi Anis. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="successToast" class="toast">
+        <i class="fas fa-check-circle"></i>
+        <span>Message sent successfully! I’ll get back to you soon.</span>
+    </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Gestion du menu hamburger
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navUl = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', function() {
+            this.classList.toggle('active');
+            navUl.style.display = (navUl.style.display === 'block') ? 'none' : 'block';
+        });
+
+        // Gestion des liens de navigation
+        document.querySelectorAll('nav ul li a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                
+                if (targetSection) {
+                    window.scrollTo({
+                        top: targetSection.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+
+                // Fermer le menu mobile après un clic sur un lien
+                if (window.innerWidth <= 768) {
+                    menuToggle.classList.remove('active');
+                    navUl.style.display = 'none';
+                }
+            });
+        });
+
+        // Gestion des onglets dans la section "About"
+        const tabLinks = document.querySelectorAll('.tab-links');
+        const tabContents = document.querySelectorAll('.tab-contents');
+
+        function openTab(tabName) {
+            tabContents.forEach(content => content.style.display = 'none');
+            tabLinks.forEach(link => link.classList.remove('active-link'));
+            
+            document.getElementById(tabName).style.display = 'block';
+            document.querySelector(`.tab-links[data-tab="${tabName}"]`).classList.add('active-link');
+        }
+
+        tabLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                const tabName = this.getAttribute('data-tab');
+                openTab(tabName);
+            });
+        });
+
+        // Gestion de la soumission du formulaire avec notification toast
+        const successToast = document.getElementById('successToast');
+        document.querySelector('#contact form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = new FormData(this);
+            fetch(this.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    successToast.classList.add('show');
+                    setTimeout(() => {
+                        successToast.classList.remove('show');
+                    }, 3000); // La notification disparaît après 3 secondes
+                    this.reset(); // Réinitialiser le formulaire
+                } else {
+                    alert('Error sending message. Please try again.'); // Garder une alerte simple pour les erreurs
+                }
+            }).catch(error => {
+                alert('Error: ' + error);
+            });
+        });
+    });
+    </script>
+</body>
+</html>

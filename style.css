@@ -1,0 +1,718 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #080808;
+    color: #fff;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image:url(/images/background.png);
+    background-size: cover;
+    background-position: center;
+
+}
+/* Annule l'effet de survol qui modifie le background du header */
+#header:hover {
+    background: url("/images/background.png") no-repeat center center/cover !important;
+}
+.container{
+    padding: 10px 10%;
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+nav img{
+    width: 200px;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none; /* Correction */
+    margin: 10px 20px;
+}
+nav ul li a{
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+nav ul li a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: red;
+    transition: width 0.3s ease;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+/* Effet underline en rouge pour les liens de navigation */
+nav ul li a {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* ajuste la position verticale si besoin */
+    width: 0;
+    height: 2px;
+    background: red;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Style des liens de navigation du header */
+nav ul li a {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* ajustez la position si nécessaire */
+    width: 0;
+    height: 2px;
+    background: red;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+
+}
+.header-text h1{
+    font-size: 60px;
+    font-weight: 20px;
+}
+.header-text h1 span{
+    color: #ff004f;
+}
+
+#about{
+    color: #ababab;
+    padding: 80px 0;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.about-col-1{
+    flex-basis: 35%;
+
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;
+
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.tab-titles{
+    display: flex;
+    margin:20px 0 40px;
+
+}
+.tab-links{
+    margin-right: 50px;
+    font-size:18px;
+    font-weight: 500;
+    cursor :pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+    transition: all 0.3s ease;
+}
+
+/* Même effet pour les titres des tabs dans About */
+.tab-links {
+    position: relative;
+    cursor: pointer;
+}
+
+.tab-links::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: red;
+    transition: width 0.3s ease;
+}
+
+.tab-links:hover::after {
+    width: 100%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+    
+}
+.tab-contents ul li span{
+    color: #ff004f;
+    font-weight: 500;
+
+}
+
+.tab-contents{
+    display: none;
+
+}
+.tab-contents.active-tab{
+    display: block;
+}
+#service{
+    padding: 30px 0;
+
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.services-list div {
+    background: #262626;
+    padding: 40px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+}
+
+/* Au survol du container, change la couleur du background */
+.services-list div:hover {
+    background-color: red;
+}
+
+/* Conserve le style des icônes et leur transition uniquement pour l'agrandissement */
+.services-list div i {
+    font-size: 40px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+/* Au survol du container, agrandit l'icône */
+.services-list div:hover i {
+    transform: scale(1.1);
+}
+
+/* Pour aligner les éléments du portfolio en grille */
+.portfolio-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+/* Style de base des cartes du portfolio */
+.portfolio-list div {
+    background: #262626;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    padding-bottom: 20px; /* espace pour le texte */
+}
+
+/* Redimensionne l'image pour qu'elle occupe la largeur du container */
+.portfolio-list div img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Style directement appliqué aux titres et paragraphes en dessous de l'image */
+.portfolio-list div h2,
+.portfolio-list div p {
+    margin: 10px 20px;
+    color: #fff;
+}
+
+/* Ajout d'un overlay en dégradé qui apparaît au survol */
+
+
+/* Au survol, afficher l'overlay de dégradé */
+.portfolio-list div:hover::before {
+    opacity: 1;
+}
+
+/* S'assurer que le contenu textuel reste au-dessus de l'overlay */
+.portfolio-list div .portfolio-content,
+.portfolio-list div h2,
+.portfolio-list div p {
+    position: relative;
+    z-index: 2;
+}
+
+/* Exemple d'effet au survol */
+.portfolio-list div:hover {
+    background-color: red;
+}
+
+.portfolio-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #fff;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.portfolio-link:hover {
+    color: red;
+}
+
+/* Container général de la section contact */
+#contact {
+    padding: 60px 0;
+    background: #1e1e1e;
+    color: #fff;
+}
+
+/* Conserver le container centré et à texte aligné à gauche */
+#contact .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+    padding-left: 20px;
+}
+
+/* Titre de la section */
+#contact .sub-title {
+    font-size: 50px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
+
+/* Wrapper pour disposer la partie info et le formulaire côte à côte */
+.contact-wrapper {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* Partie informations de contact à gauche */
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-info h2 {
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+/* Stylisation des icônes sociales */
+.social-icons a {
+    color: #fff;
+    font-size: 30px;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+    text-decoration: none; /* Assurez-vous qu’il n’y a pas de soulignement */
+}
+
+.social-icons a:hover {
+    color: #ff004f;
+}
+
+/* Supprimer tout contenu ajouté après les icônes sociales */
+.social-icons a::after {
+    content: none;
+}
+
+/* Partie formulaires à droite */
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+.contact-form input {
+    height: 45px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contact-form button {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background: #ff004f;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #e60045;
+}
+
+/* Style du bouton Download Resume */
+.download-resume {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #ff004f;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.download-resume:hover {
+    background-color: #e60045;
+}
+
+/* Style du titre "Send a Message" dans le formulaire */
+.contact-form h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Style pour les containers dans la section About (pour les tabs) */
+.tabs .tab-contents {
+    margin-top: 20px;
+}
+.tab-container {
+    background: #262626;
+    padding: 40px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 15px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+/* Si vous souhaitez ajouter des icônes dans les listes, vous pouvez utiliser ce style */
+.tab-container li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.tab-container li i {
+    color: #ff004f; /* ou la couleur désirée */
+    margin-right: 10px;
+}
+
+/* Media Query pour les écrans mobiles (jusqu'à 768px) */
+@media screen and (max-width: 768px) {
+    /* Navigation */
+    nav {
+        flex-direction: column;
+        padding: 10px 5%;
+    }
+
+    nav img {
+        width: 150px; /* Réduire la taille du logo */
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        display: none; /* Cacher le menu par défaut */
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    /* Ajouter un bouton hamburger pour le menu mobile */
+    .menu-toggle {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+        color: #fff;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    /* Afficher le menu quand le bouton hamburger est cliqué (via JavaScript) */
+    .menu-toggle.active + ul {
+        display: block;
+    }
+
+    /* Header */
+    #header {
+        height: 80vh; /* Réduire la hauteur du header */
+    }
+
+    .header-text {
+        margin-top: 10%;
+        text-align: center;
+    }
+
+    .header-text h1 {
+        font-size: 40px; /* Réduire la taille du titre */
+    }
+
+    /* About Section */
+    .row {
+        flex-direction: column;
+    }
+
+    .about-col-1, .about-col-2 {
+        flex-basis: 100%; /* Chaque colonne prend toute la largeur */
+    }
+
+    .about-col-1 img {
+        margin-bottom: 20px;
+    }
+
+    .sub-title {
+        font-size: 40px; /* Réduire la taille des titres */
+    }
+
+    .tab-titles {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .tab-links {
+        margin: 10px;
+    }
+
+    /* Services Section */
+    .services-list {
+        grid-template-columns: 1fr; /* Une colonne pour les services */
+    }
+
+    .services-list div {
+        padding: 20px;
+        font-size: 18px;
+    }
+
+    /* Portfolio Section */
+    .portfolio-list {
+        grid-template-columns: 1fr; /* Une colonne pour les projets */
+    }
+
+    .portfolio-list div img {
+        height: auto;
+    }
+
+    /* Contact Section */
+    .contact-wrapper {
+        flex-direction: column;
+    }
+
+    .contact-info, .contact-form {
+        flex-basis: 100%; /* Chaque partie prend toute la largeur */
+    }
+
+    #contact .sub-title {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .contact-form form {
+        width: 100%;
+    }
+
+    /* Footer */
+    footer .container {
+        padding: 10px;
+    }
+}
+
+/* Media Query pour les tablettes (768px à 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Navigation */
+    nav img {
+        width: 180px; /* Réduire légèrement le logo */
+    }
+
+    nav ul li {
+        margin: 10px 15px;
+    }
+
+    /* Header */
+    #header {
+        height: 90vh;
+    }
+
+    .header-text h1 {
+        font-size: 50px;
+    }
+
+    /* About Section */
+    .about-col-1, .about-col-2 {
+        flex-basis: 48%; /* Réduire légèrement les colonnes */
+    }
+
+    .sub-title {
+        font-size: 50px;
+    }
+
+    /* Services et Portfolio */
+    .services-list, .portfolio-list {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Réduire la taille minimale */
+    }
+
+    /* Contact */
+    .contact-wrapper {
+        gap: 20px;
+    }
+
+    #contact .sub-title {
+        font-size: 45px;
+    }
+}
+
+/* Styles généraux pour améliorer la responsivité */
+.container {
+    padding: 10px 5%; /* Réduire les marges sur mobile */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ajouter un style pour le bouton hamburger (à ajouter dans le HTML) */
+.menu-toggle {
+    display: none; /* Caché par défaut sur desktop */
+}
+
+/* Styles pour la notification toast */
+.toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(34, 34, 34, 0.9); /* Fond sombre semi-transparent */
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 1000;
+}
+
+.toast.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.toast i {
+    color: #2ecc71; /* Vert pour l’icône de coche (vous pouvez changer pour #ff004f si vous préférez rouge) */
+    font-size: 20px;
+}
+
+.toast span {
+    font-weight: 500;
+}
+
+/* Ajustement pour mobile */
+@media screen and (max-width: 768px) {
+    .toast {
+        bottom: 10px;
+        right: 10px;
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .toast i {
+        font-size: 18px;
+    }
+}
